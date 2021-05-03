@@ -1,0 +1,9 @@
+version: 0.1
+phases:
+  install:
+    commands:
+      - cd common && git clone https://eric.w.nord@gitlab.com/aws-account-tools/acs.git
+      - export TerraformVersion=0.9.3 && cd /tmp && curl -o terraform.zip https://releases.hashicorp.com/terraform/${TerraformVersion}/terraform_${TerraformVersion}_linux_amd64.zip && unzip terraform.zip && mv terraform /usr/bin
+  build:
+    commands:
+      - cd accounts/00/dev-stack-oit-byu && terraform init && terraform plan && echo terraform apply
