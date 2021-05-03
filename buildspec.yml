@@ -7,4 +7,4 @@ phases:
       - apt-get update && apt-get install terraform
   build:
     commands:
-      - terraform init && terraform plan && echo terraform apply
+      - terraform init && terraform plan && terraform apply
