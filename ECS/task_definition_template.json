@@ -1,0 +1,14 @@
+[
+  {
+    "name" : "${name}",
+    "image" : "${repository_url}",
+    "cpu" : 1,
+    "memory" : 256,
+    "portMappings" : [
+      {
+        "containerPort" : 80,
+        "protocol" : "tcp"
+      }
+    ]
+  }
+]
