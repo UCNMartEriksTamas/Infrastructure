@@ -24,7 +24,7 @@ variable "api_task_name" {
 
 # --------------- DATABASE ---------------
 variable "mssql_username" {
-  default = "user"
+  default = "ucn"
 }
 
 variable "mssql_password" {
