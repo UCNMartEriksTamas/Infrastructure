@@ -5,6 +5,11 @@ terraform {
       version = "~> 3.0"
     }
   }
+  backend "s3" {
+    bucket = "miitfstatebucket"
+    key = "ucn_project.tfstate"
+    region = "eu-central-1"
+  }
 }
 
 provider "aws" {
